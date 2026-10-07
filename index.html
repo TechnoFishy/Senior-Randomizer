@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./output.css" rel="stylesheet">
+        <script src="./Scripts/main.mjs"></script>
+    </head>
+
+    <body onload="exclusion()" style="overflow: hidden;" class="bg-amber-100">
+        <div class="justify-self-center bg-amber-600 pt-5 pb-3 shadow-2xl">
+            <h1 class="text-6xl font-bold text-center mt-5">
+                Welcome to the "Work With The Freshmen Randomizer Inator"
+            </h1>
+
+            <h3 class="text-center text-2xl mt-3">
+                Martinez can use this site to randomize what 3 seniors are gonna work with the freshmen
+            </h3>
+        </div>
+
+        <!-- Shows The Students -->
+        <div class="flex gap-10 justify-self-center mt-10 text-3xl bg-amber-400 p-10 rounded-2xl shadow-2xl">
+            <h2 class="font-medium" id="student_1">
+                Student 1
+            </h2>
+            <h2 class="font-medium" id="student_2">
+                Student 2
+            </h2>
+            <h2 class="font-medium" id="student_3">
+                Student 3
+            </h2>
+        </div>
+
+        <div class="absolute justify-self-left bg-amber-400 p-5 rounded-2xl ml-2" style="max-width: fit-content; height: 300px">
+            <h1 class="text-3xl font-bold">
+                Whos Excluded From The Pool
+            </h1>
+
+            <div id="List_of_the_Damned"></div>
+        </div>
+
+        <div class="justify-self-center mt-10 bg-amber-400 p-5 rounded-2xl shadow-2xl">
+            <h1 class="font-bold text-center text-4xl">
+                Who to Exclude
+            </h1>
+
+            <form id="Exclude_Form">
+                <div class="">
+                    <label class="text-xl p-2"><input class="px-2" type="checkbox" name="students" value=0>Taha</label>
+                    <label class="text-xl p-2"><input class="px-2" type="checkbox" name="students" value=1>Moises</label>
+                    <label class="text-xl p-2"><input class="px-2" type="checkbox" name="students" value=2>Cristian</label>
+                    <label class="text-xl p-2"><input class="px-2" type="checkbox" name="students" value=3>Jacob</label>
+                    <br>
+                    <label class="text-xl p-2"><input class="px-2" type="checkbox" name="students" value=4>Akari</label>
+                    <label class="text-xl p-2"><input class="px-2" type="checkbox" name="students" value=5>James</label>
+                    <label class="text-xl p-2"><input class="px-2" type="checkbox" name="students" value=6>Cayden</label>
+                    <label class="text-xl p-2"><input class="px-2" type="checkbox" name="students" value=7>Maysem</label>
+                    <br>
+                    <label class="text-xl p-2"><input class="px-2" type="checkbox" name="students" value=8>Justin</label>
+                    <label class="text-xl p-2"><input class="px-2" type="checkbox" name="students" value=9>Nels</label>
+                    <label class="text-xl p-2"><input class="px-2" type="checkbox" name="students" value=10>Kosta</label>
+                    <label class="text-xl p-2"><input class="px-2" type="checkbox" name="students" value=11>Adam</label>
+                    <label class="text-xl p-2"><input class="px-2" type="checkbox" name="students" value=12>Daemion</label>
+                </div>
+                <br>
+
+                <div class="justify-self-center mt-22">
+                    <button type="submit" class="bg-amber-600 text-4xl px-4 py-2 rounded-2xl">
+                        Randomize
+                    </button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
